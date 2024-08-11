@@ -9,20 +9,16 @@ The goal of this project is to build a STR model that can takes an image contain
 - Contains 507 natural scene images, (including 258 training images and 249 test images) in total.
 - Dataset download at: https://drive.google.com/file/d/1x9e2FNDlKc_lBkJvHvWSKKfCSSqNsQfM/view
 ## 2. Data Preparation
-## 3. Text Detector with YOLOv8
-- Model summary: YOLOv8 is an advanced object detection model by Ultralytics that uses anchor-free detection
-- Training:
-## 4. Text Recognizer with CRNN
-- Model summary:
-- Training:
-## 5. Evaluation
-- YOLOv8:
-- Plain CRNN:
-- CRNN + Skip Connection:
-- CRNN + Resnet
+- Extract data from XML and convert to YOLOv8 format.
+- Perform train test split for training.
+## 3. Evaluation
+- YOLOv8: 0.956 mAP50 on validation set.
+- Plain CRNN: 3.85 Val Loss, 3.87 Test loss.
+- CRNN + Skip Connection: 3.1 Val loss, 3.40 Test loss.
+- CRNN + Resnet: 1.63 Val loss, 1.44 Test loss.
 
-## 6. References
+## 4. References
 - 7th International Conference on Document Analysis and Recognition (ICDAR 2003), 2-Volume Set, 3-6 August 2003, Edinburgh, Scotland, UK. IEEE Computer Society 2003, ISBN 0-7695-1960-1
-- 
+
 
  
