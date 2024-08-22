@@ -9,8 +9,8 @@ import torch.nn as nn
 from ultralytics import YOLO
 
 # Initialize YOLO and CRNN models
-text_det_model_path = './yolov8_best.pt'
-crnn_resnet_model_path = './crnn_resnet_best.pt'
+text_det_model_path = 'STR_Web App/yolov8_best.pt'
+crnn_resnet_model_path = 'STR_Web App/crnn_resnet_best.pt'
 
 # YOLO model for text detection
 yolo = YOLO(text_det_model_path)
@@ -139,7 +139,7 @@ def predict(img_path, data_transforms, text_det_model, text_reg_model, idx_to_ch
 # Streamlit App
 
 # Load and display the uploaded image for illustration purposes
-illustration_image_path = 'assets/image1.png'  # Path to the image in the 'assets' folder
+illustration_image_path = 'STR_Web App/assets/image1.png'  # Path to the image in the 'assets' folder
 illustration_image = Image.open(illustration_image_path)
 
 st.title("Scene Text Recognition (STR)")
@@ -151,12 +151,12 @@ st.write("Upload your image of an orange or choose one of the example images bel
 
 # Example images (stored in the 'assets' folder)
 example_images = {
-    "Example 1": "assets/example1.jpg",
-    "Example 2": "assets/example2.jpg",
-    "Example 3": "assets/example3.jpg",
-    "Example 4": "assets/example4.jpg",
-    "Example 5": "assets/example5.jpg",
-    "Example 6": "assets/example6.jpg"
+    "Example 1": "STR_Web App/assets/example1.jpg",
+    "Example 2": "STR_Web App/assets/example2.jpg",
+    "Example 3": "STR_Web App/assets/example3.jpg",
+    "Example 4": "STR_Web App/assets/example4.jpg",
+    "Example 5": "STR_Web App/assets/example5.jpg",
+    "Example 6": "STR_Web App/assets/example6.jpg"
 }
 
 # Dropdown menu for selecting example images
