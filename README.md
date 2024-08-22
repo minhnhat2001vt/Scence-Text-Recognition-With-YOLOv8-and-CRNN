@@ -4,6 +4,8 @@
 Scene Text Recognition (STR) is a problem that applies image processing and character recognition algorithms to identify text appearing in images. A Scene Text Recognition program usually includes two main stages: Text Detection (Detector) and Text Recognition (Recognizer).
 
 The goal of this project is to build a STR model that can takes an image containing text as input, then returns Coordinate location and text in the image as outputs.
+
+Project demo: https://scence-text-recognition-with-yolov8-and-crnn-jyuei7poccent4app.streamlit.app/
 ## 1. Dataset
 - The dataset using in this project is ICDAR 2003, which is a dataset for scene text recognition.
 - Contains 507 natural scene images, (including 258 training images and 249 test images) in total.
