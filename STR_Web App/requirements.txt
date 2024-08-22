@@ -1,6 +1,0 @@
-streamlit>=1.0
-Pillow>=8.0.0
-torch>=1.7.0
-timm>=0.4.12
-matplotlib>=3.3.0
-ultralytics
