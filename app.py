@@ -147,7 +147,7 @@ st.title("Scene Text Recognition (STR)")
 # Display the illustration image
 st.image(illustration_image, use_column_width=True)
 
-st.write("Upload your image of an orange or choose one of the example images below:")
+st.write("Upload your image or choose one of the example images below:")
 
 # Example images (stored in the 'assets' folder)
 example_images = {
